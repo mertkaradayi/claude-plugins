@@ -1,0 +1,22 @@
+{
+  "name": "mertkaradayi",
+  "owner": {
+    "name": "Mert Karadayi",
+    "email": "imertkaradayi@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by Mert Karadayi",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "x-algorithm-optimizer",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mertkaradayi/x-algorithm-optimizer.git"
+      },
+      "description": "Optimize tweets based on X's open-source recommendation algorithm. Generates algorithm-graded tweet versions with timing, media, and engagement strategies.",
+      "version": "1.0.0"
+    }
+  ]
+}
