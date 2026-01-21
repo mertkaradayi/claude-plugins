@@ -1,0 +1,12 @@
+{
+  "name": "x-algorithm-optimizer",
+  "version": "1.0.0",
+  "description": "Optimize tweets based on X's open-source recommendation algorithm",
+  "author": {
+    "name": "Mert Karadayi",
+    "url": "https://github.com/mertkaradayi"
+  },
+  "repository": "https://github.com/mertkaradayi/x-algorithm-optimizer",
+  "license": "MIT",
+  "keywords": ["twitter", "x", "algorithm", "tweets", "social-media", "optimization", "simclusters"]
+}

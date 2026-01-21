@@ -11,10 +11,7 @@
   "plugins": [
     {
       "name": "x-algorithm-optimizer",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mertkaradayi/x-algorithm-optimizer.git"
-      },
+      "source": "./plugins/x-algorithm-optimizer",
       "description": "Optimize tweets based on X's open-source recommendation algorithm. Generates algorithm-graded tweet versions with timing, media, and engagement strategies.",
       "version": "1.0.0"
     }
