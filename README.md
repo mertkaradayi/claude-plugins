@@ -23,6 +23,7 @@ Optimize tweets based on X's open-source recommendation algorithm.
 
 **Usage:**
 ```bash
+/tweet setup                 # Configure your profile (run first!)
 /tweet <your idea>           # Generate optimized tweets
 /tweet thread: <topic>       # Generate a thread
 /tweet analyze: <draft>      # Analyze existing draft

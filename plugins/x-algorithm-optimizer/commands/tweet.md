@@ -8,6 +8,7 @@ Generate algorithm-optimized tweet versions from your idea.
 
 ## Usage
 
+- `/tweet setup` - Configure your profile for personalized recommendations (run first!)
 - `/tweet <your idea>` - Generate optimized tweet versions
 - `/tweet thread: <topic>` - Generate an optimized thread
 - `/tweet analyze: <draft>` - Analyze an existing draft

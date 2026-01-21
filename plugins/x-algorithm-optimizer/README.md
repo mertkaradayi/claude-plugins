@@ -15,6 +15,7 @@ A Claude Code plugin that optimizes tweets based on X's open-source recommendati
 ## Usage
 
 ```bash
+/tweet setup                 # Configure your profile (run first!)
 /tweet <your idea>           # Generate optimized tweets
 /tweet thread: <topic>       # Generate a thread
 /tweet analyze: <draft>      # Analyze existing draft

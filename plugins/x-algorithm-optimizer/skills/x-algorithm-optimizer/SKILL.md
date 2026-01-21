@@ -15,10 +15,48 @@ Transform tweet ideas into algorithm-optimized posts using direct insights from 
 ## Quick Start
 
 ```
+/tweet setup                 Configure your profile (run first!)
 /tweet <your idea>           Generate optimized tweets
 /tweet thread: <idea>        Generate optimized thread
 /tweet analyze: <draft>      Analyze existing draft
 /tweet hooks                 Show hook templates
+```
+
+---
+
+## User Configuration
+
+**IMPORTANT**: Before generating tweets, check for user config at `~/.x-algorithm-optimizer.json`
+
+### If Config Exists
+
+Read the config and personalize all recommendations:
+- Use their niche for SimClusters alignment advice
+- Apply their account size strategy
+- Tailor hook suggestions to their goals and tone
+
+### If No Config Exists
+
+At the start of your response, add:
+
+```
+Note: Run /tweet setup to personalize recommendations for your niche and goals.
+Using generic advice for now.
+```
+
+Then proceed with generic advice that works across niches.
+
+### Config Structure
+
+```json
+{
+  "niche": "tech",
+  "nicheDescription": "Tech/Developer content",
+  "accountSize": "small",
+  "followerCount": "under 1K",
+  "goals": ["growth", "engagement", "authority"],
+  "tone": "mix"
+}
 ```
 
 ## When to Use This Skill
@@ -134,6 +172,54 @@ Include media, timing, hashtag suggestions.
 ### Step 5: Explain Why It Works
 
 Connect recommendations to actual algorithm mechanics.
+
+---
+
+## Niche Adaptation Guide
+
+Adapt recommendations based on user's niche (from config or context):
+
+### Tech/Developer
+- SimClusters: Strong tech community, high cross-over with startups, AI, tools
+- Best hooks: Tutorial, contrarian, data-driven
+- Media: Code screenshots, terminal demos, architecture diagrams
+- Timing: Weekday mornings (9-11 AM EST)
+
+### Business/Entrepreneurship
+- SimClusters: Business, startups, productivity, finance overlap
+- Best hooks: Story, data, lessons learned
+- Media: Screenshots of results, charts, before/after
+- Timing: Early morning (6-8 AM EST) or evening
+
+### Fitness/Health
+- SimClusters: Fitness, wellness, nutrition, motivation
+- Best hooks: Transformation, challenge, myth-busting
+- Media: Progress photos, workout videos, infographics
+- Timing: Early morning (5-7 AM) or evening (6-8 PM)
+
+### Finance/Investing
+- SimClusters: Finance, crypto, economics, business
+- Best hooks: Data, contrarian, prediction
+- Media: Charts, portfolio screenshots, analysis visuals
+- Timing: Market hours or Sunday evening
+
+### Creative/Art/Design
+- SimClusters: Design, art, creativity, tools
+- Best hooks: Process reveal, before/after, tutorial
+- Media: ESSENTIAL - work samples, process videos, timelapses
+- Timing: Varies, test different times
+
+### Marketing/Growth
+- SimClusters: Marketing, startups, SaaS, copywriting
+- Best hooks: Data (results), case study, contrarian
+- Media: Screenshots of metrics, A/B results, frameworks
+- Timing: Weekday business hours
+
+### Lifestyle/Personal Brand
+- SimClusters: Varies based on specific focus
+- Best hooks: Story, vulnerability, hot take
+- Media: Personal photos, behind-the-scenes
+- Timing: Evening and weekends often work well
 
 ---
 
@@ -606,31 +692,65 @@ Post when you can engage for the next 2-4 hours. Early replies matter more than 
 
 ---
 
-## Small Account Strategy (Under 1K Followers)
+## Account Size Strategies
 
-### Growth Priorities
+Apply the appropriate strategy based on user's config (or ask if unknown):
 
-1. **Niche down**: Every tweet reinforces your expertise
+### Small Accounts (Under 1K Followers)
+
+**Focus**: Niche consistency and engagement building
+
+Priorities:
+1. **Niche down**: Every tweet reinforces expertise
 2. **Engage first**: Comment on others' posts (builds RealGraph)
 3. **Consistency**: 1-2 quality tweets/day beats sporadic bursts
-4. **Reply to everyone**: Your replies strengthen relationship signals
+4. **Reply to everyone**: Replies strengthen relationship signals
 5. **Quality over vanity**: Engaged followers > impression count
 
-### What Works
+What works: Specific tutorials, learning in public, hot takes, building in public
+What doesn't: Generic quotes, broad content, posting without engaging
 
-- Specific tutorials (show, don't tell)
-- Learning in public (vulnerability + insight)
-- Hot takes that spark discussion
-- Code snippets solving real problems
-- Building in public updates
+### Medium Accounts (1K-10K Followers)
 
-### What Doesn't Work
+**Focus**: Balance growth with community building
 
-- Generic motivation quotes
-- Broad, unspecific content
-- Posting without engaging
-- Buying followers (breaks SimClusters)
-- Copying viral tweets (deduplication filters)
+Priorities:
+1. **Maintain niche authority**: Stay consistent with your topic
+2. **Create shareable content**: Focus on high-retweet formats
+3. **Engage strategically**: Prioritize replies from engaged followers
+4. **Test different formats**: Threads, polls, images
+5. **Build routines**: Regular posting schedule
+
+What works: Threads, curated insights, original takes, engagement with peers
+What doesn't: Generic content, ignoring comments, inconsistent posting
+
+### Large Accounts (10K-100K Followers)
+
+**Focus**: Maintaining engagement rate while growing
+
+Priorities:
+1. **Quality over quantity**: Each tweet should deliver value
+2. **Avoid negative signals**: Larger audience = more potential mutes
+3. **Engage selectively**: Focus on meaningful conversations
+4. **Experiment with formats**: Your reach allows testing
+5. **Provide unique value**: Share insights others can't
+
+What works: Original insights, exclusive information, thought leadership
+What doesn't: Low-effort posts, controversial for controversy's sake
+
+### Very Large Accounts (100K+ Followers)
+
+**Focus**: Avoiding negative signals and maintaining quality
+
+Priorities:
+1. **Protect engagement rate**: Every post is scrutinized
+2. **Minimize negative feedback risk**: Avoid polarizing content
+3. **Leverage authority**: Your endorsements carry weight
+4. **Create conversation**: Your replies boost others
+5. **Stay authentic**: Followers detect inauthenticity quickly
+
+What works: Thoughtful takes, supporting community, exclusive insights
+What doesn't: Hot takes that alienate segments, excessive self-promotion
 
 ---
 
